@@ -1,0 +1,52 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace;
+}
+body{
+    background-image: url(https://cdn.shopify.com/s/files/1/2040/0303/products/Cute_Happy_Kawaii_Sea_Creature_Life_Animal_Cartoon_Emoji_-_Octopus_525020483_grande.jpg?v=1499840467);
+}
+html:hover{
+    background-position: center;
+    background-size: cover;
+    transition-duration: 0.2s;
+}
+h1{
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    background-color: tomato;
+    color: white;
+}
+p{
+    color:#c1781f;
+    font-size: 20px;
+}
+img{
+    float:left;
+    margin-right: 10px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+#content{
+    overflow:auto;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(0,255,255, 0.5);
+}
+#header:hover{
+    background-image:url(https://arbordayblog.org/wp-content/uploads/2018/06/oak-tree-sunset-iStock-477164218-1080x608.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition-duration: 0.5s;
+}
+#tribble:hover{
+    float:right;
+    /*transition: ease-in-out;*/
+    transition-duration: 30s;
+    
+}
