@@ -5,47 +5,18 @@
         <title>redesigned octo tribble</title>
         <link rel="stylesheet" type="text/css" href="main.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $("#dropdown-content").hide();
-                var body = true;
-                $(document).dblclick(function(e) {
-                    if(e.target.classList.contains('content')) {
-                        $('.content').fadeOut('slow');
-                        body = false;
-                    } else if(e.target.getAttribute("id") == "baited") {
-                        var baited = $(".content").append("<p>lol baited</p>");
-                    }
-                })
-                $("#header").mouseenter(function(){
-                    if(!body){
-                        $(".content").fadeIn("slow");
-                        body = true;
-                    }
-                })
-                $(".dropdown").hover(function(){
-                    $("#dropdown-content").show();
-                    // $("#header > h2").css("backgroundColor","tomato");
-                    $("#dropdown-content").css("width", $("#header > h2").outerWidth());
-                    $("#header > h2").mouseout(function(){
-                        $(this).css("background-color" , "tomato");
-                    })
-                    $("#header > h2").mouseover(function(){
-                        $(this).css("background-color","aqua");
-                    })
-                },function(){
-                    $("#dropdown-content").hide();
-                    $("#header > h2").css("background-color","transparent");
-                })
-            });
-        </script>
+        <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
         <div id="header">
             <h2 class="dropdown">Other sites</h2>
             <nav id="dropdown-content" class="dropdown">
-                <a href="https://jchou21.github.io/About-Me/index.html">About me</a>
+                <a href="https://jchou21.github.io/Web-s-site/">Web's Site</a>
                 <a href="https://jchou21.github.io/gameme/">Game Reviews</a>
+                <a href="https://jchou21.github.io/About-Me/index.html">About me</a>                
+                <a href="https://jchou21.github.io/VAPA3-intro-site/#">Winter Update</a>
+                <a href="https://jchou21.github.io/quickboiwebsite/index.html">Expired Eggs</a>
+                <a href="https://jchou21.github.io/HelloWorld/">Just a horrible place to be</a>
             </nav>
             <h1>Redesigned Octo Tribble</h1>
             
