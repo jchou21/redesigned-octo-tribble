@@ -15,12 +15,11 @@ h1{
     margin: 0px;
     padding: 10px;
     text-align: center;
-    color: white;
 }
 h2{
     display: flex;
     margin: 0px;
-    padding:15px;
+    padding:14px;
     float:right;
 }
 p{
@@ -31,12 +30,32 @@ img{
     float:left;
     margin-right: 10px;
 }
+nav{
+    position: absolute;
+    right: 0px;
+    top: 50.4px;
+    float: right;
+    margin: 0px;
+    list-style-type: none;
+    background-color: tomato;
+    width: max-content;
+}
+nav a{
+    text-decoration: none;
+    right: 0px;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+nav a:hover{
+    background-color: aquA;
+}
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
-  }
-h2:hover{
+}
+#header h2:hover{
     background-color: aqua;
 }
 .content{
@@ -45,11 +64,12 @@ h2:hover{
     padding: 10px;
     background-color: rgba(0,255,255, 0.5);
 }
-.dropdown{
+#dropdown{
     text-decoration: none;
 }
 #header{
     background-color: tomato;
+    color: white;
 }
 #header:hover{
     background-image:url(https://arbordayblog.org/wp-content/uploads/2018/06/oak-tree-sunset-iStock-477164218-1080x608.jpg);
